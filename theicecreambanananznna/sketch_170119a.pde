@@ -1,0 +1,10 @@
+size(500,600);
+background(48,204,215);
+fill(225,21,184);
+text("ICE CREAM!", 200,150);
+fill(225,48,21);
+text("ICE CREAM!", 200,250);
+fill(42,225,21);
+text("ICE CREAM!", 200,350);
+fill(204,225,21);
+text("BANANANANANANANANANA", 150,450);
