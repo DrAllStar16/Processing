@@ -6,7 +6,7 @@
 void setup(){
 
   size(1500,900);
-  
+  ellipseMode(LEFT);
 }
   void draw(){
     background(200,200,200);
@@ -17,11 +17,15 @@ void setup(){
     if(mousePressed){
   fill(random(255),(67),(134));
     }
+    if(mouseX<190) mouseX = 190;
+   if(mouseX>290) mouseX = 290;
+   if(mouseY<200) mouseY = 200;
+   if(mouseY>250) mouseY = 250 ;
+   
     ellipse(mouseX,mouseY,50,50);
-    ellipse(mouseX+150,mouseY,50,50);
+    ellipse(mouseX+200,mouseY,50,50);
     
   
-   
   }
 //1.  In the draw method, create eyeballs so that they eyes look like this:
   //done
@@ -44,6 +48,3 @@ void setup(){
 //*4. [optional] Put a face behind the eyes. Load an image in the setup method like this:
    // PImage face = loadImage("face.jpeg");
 //image(face, 0, 0);  
-
-
-
